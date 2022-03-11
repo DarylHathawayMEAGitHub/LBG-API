@@ -33,6 +33,6 @@ spec:
     spec:
       containers:
       - name: api
-        image: stratcastor/api:latest
+        image: ap3xmea/api:latest
         ports:
         - containerPort: 4000
