@@ -33,6 +33,6 @@ spec:
     spec:
       containers:
       - name: api
-        image: ap3xmea/api:latest
+        image: gcr.io/lbg-210222/api-daryl:latest
         ports:
         - containerPort: 4000

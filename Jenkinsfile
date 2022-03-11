@@ -3,12 +3,12 @@ pipeline {
 	stages{
 		stage('Build Image'){
 			steps{
-			sh 'docker build -t gcr.io/lbg210222/api:build-$BUILD_NUMBER .'
+			sh 'docker build -t gcr.io/lbg-210222/api-daryl:build-$BUILD_NUMBER .'
 			}
 		}
 		stage('Push to Dockerhub'){
 			steps{
-                        sh 'docker push gcr.io/lbg210222/api:build-$BUILD_NUMBER'
+                        sh 'docker push gcr.io/lbg-210222/api-daryl:build-$BUILD_NUMBER'
 			}
 		}
 		stage('Reapply '){
