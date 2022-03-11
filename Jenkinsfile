@@ -6,7 +6,7 @@ pipeline {
 			sh 'docker build -t gcr.io/lbg-210222/api-daryl:latest -t gcr.io/lbg-210222/api-daryl:build-$BUILD_NUMBER .'
 			}
 		}
-		stage('Push to Dockerhub'){
+		stage('Push to GCR.IO'){
 			steps{
                         sh 'docker push gcr.io/lbg-210222/api-daryl:build-$BUILD_NUMBER'
                         sh 'docker push gcr.io/lbg-210222/api-daryl:latest'
