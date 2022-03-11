@@ -33,6 +33,6 @@ spec:
     spec:
       containers:
       - name: api
-        image: gcr.io/lbg-210222/api-daryl:latest
+        image: gcr.io/lbg-210222/api-daryl:$BUILD_NUMBER
         ports:
         - containerPort: 4000
