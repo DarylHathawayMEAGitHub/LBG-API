@@ -21,7 +21,7 @@ pipeline {
 		}
                 stage('Cleanup'){
 			steps{
-                        sh 'docker rmi gcr.io/lbg-210222/api-daryl:$BUILD_NUMBER'
+                        sh 'docker rmi gcr.io/lbg-210222/api-daryl:build-$BUILD_NUMBER'
                         sh 'docker rmi gcr.io/lbg-210222/api-daryl:latest'
 			}
 		}
